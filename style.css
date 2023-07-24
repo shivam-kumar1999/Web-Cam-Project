@@ -16,7 +16,7 @@ video{
 }
 
 .action-cont{
-    height: 15rem;
+    height: 12rem;
     width: 5rem;
     
     position: absolute;
@@ -34,10 +34,53 @@ video{
     
     border-radius: 50%;
     border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .record-btn{
     background-color: red;
-}
-.capure-btn{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+} 
+
+.capture-btn{
    background-color: white;
+   height: 3rem;
+   width: 3rem;
+   border-radius: 50%;
+}
+
+.scale-record{
+    animation-name: scale-record;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+
+}
+
+
+.scale-capture{
+    animation-name: scale-capture;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+
+}
+
+@keyframes scale-record{
+     0%{
+           transform: scale(0.8);
+     }
+     100%{
+           transform: scale(1.2);
+     }
+}
+
+@keyframes scale-capture{
+     0%{
+           transform: scale(0.8);
+     }
+     100%{
+           transform: scale(1.2);
+     }
 }
