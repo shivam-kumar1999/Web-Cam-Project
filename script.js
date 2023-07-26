@@ -66,10 +66,4 @@ let constraints ={
 
  })
 
- function startTimer(){
-        
- }
-
- function stopTimer(){
-  
- }
+ 
